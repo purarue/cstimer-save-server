@@ -42,7 +42,7 @@ If you have a port conflict, change the `PORT` variable in `cstimer_auto_downloa
 
 ### bleanser
 
-I personally run this with [this script](https://sean.fish/d/cstimer-server?dark) - saving `-timestamped` filenames, and then run have a corresponding [bleanser module](https://github.com/seanbreckenridge/bleanser) script to remove 'useless' backups every few hours:
+I use the `-timestamp` flag, which means the directory this saves to gets pretty large pretty quickly. To remove duplicate/'useless' data, I have a [bleanser (backup cleaner) module](https://github.com/seanbreckenridge/bleanser) which removes any files which don't include any new/unique data:
 
 ```
 [ ~ ] $ python3 -m bleanser_sean.modules.cstimer prune ~/data/cubing/cstimer --remove --yes

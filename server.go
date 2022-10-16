@@ -68,7 +68,7 @@ func main() {
 			return
 		}
 		if len(b) == 0 {
-			http.Error(w, "Body was emtpy", http.StatusBadRequest)
+			http.Error(w, "Body was empty", http.StatusBadRequest)
 			return
 		}
 		var target string
