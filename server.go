@@ -21,6 +21,7 @@ type config struct {
 	port        int
 	saveTo      string
 	timestamped bool
+	secretKey   string
 }
 
 func parseFlags() *config {
@@ -42,10 +43,12 @@ func parseFlags() *config {
 	if !fileInfo.IsDir() {
 		log.Fatalf("Error: Path '%s' is not a directory", *saveTo)
 	}
+	secretKey := os.Getenv("CSTIMER_SECRET")
 	return &config{
 		port:        *port,
 		saveTo:      *saveTo,
 		timestamped: *timestamped,
+		secretKey:   secretKey,
 	}
 }
 
@@ -60,6 +63,15 @@ func main() {
 		if r.Method != http.MethodPost {
 			http.Error(w, "Not allowed", http.StatusMethodNotAllowed)
 			return
+		}
+
+		auth := r.URL.Query().Get("auth")
+		if config.secretKey != "" && config.secretKey != auth {
+			http.Error(w, "Secret key doesnt not match", http.StatusForbidden)
+			return
+		}
+		if auth != "" && config.secretKey == "" {
+			fmt.Fprintf(os.Stderr, "Warning: recieved auth key but no CSTIMER_SECRET set in environment")
 		}
 
 		b, err := io.ReadAll(r.Body)

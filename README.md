@@ -32,13 +32,29 @@ usage: cstimer-save-server [FLAG...]
 Now whenever you open <https://cstimer.net/>, it should save your current solves to a local file:
 
 ```
-$ go run ./server.go -save-to . -timestamped
+$ cstimer-save-server -save-to . -timestamped
 2022/10/16 10:20:53 cstimer-save-server saving to '.' on port 8553
 2022/10/16 10:20:55 Saving data to '1665940855868.json'
 2022/10/16 10:20:56 Saving data to '1665940856882.json'
 ```
 
 If you have a port conflict, change the `PORT` variable in `cstimer_auto_download.js`, and supply the `-port` flag to change what port the server launches on
+
+## auth
+
+I would recommend setting up Authorization for this, so no random application/service can hit the server endpoint, saving arbitrary data to the `-save-to` directory.
+
+To do that set the `const SECRET` in the userscript to something, e.g.:
+
+```
+const SECRET = "Rszhs3b24La87401";
+```
+
+... and then launch the server with that:
+
+```
+CSTIMER_SECRET="Rszhs3b24La87401" cstimer-save-server -save-to .
+```
 
 ### bleanser
 
