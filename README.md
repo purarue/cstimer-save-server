@@ -44,13 +44,15 @@ If you have a port conflict, change the `PORT` variable in `cstimer_auto_downloa
 
 I would recommend setting up Authorization for this, so no random application/service can hit the server endpoint, saving arbitrary data to the `-save-to` directory.
 
-To do that set the `const SECRET` in the userscript to something, e.g.:
+To do that set the `const SECRET` in the userscript (`cstimer_auto_download.js`) to something, e.g.:
 
 ```
 const SECRET = "Rszhs3b24La87401";
 ```
 
-... and then launch the server with that:
+Typically you can edit the userscript with the extension icon when on the page.
+
+Then launch the server with that key:
 
 ```
 CSTIMER_SECRET="Rszhs3b24La87401" cstimer-save-server -save-to .
