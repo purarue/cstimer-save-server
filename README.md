@@ -60,7 +60,7 @@ CSTIMER_SECRET="Rszhs3b24La87401" cstimer-save-server -save-to .
 
 ### bleanser
 
-I use the `-timestamp` flag, which means the directory this saves to gets pretty large pretty quickly. To remove duplicate/'useless' data, I have a [bleanser (backup cleaner) module](https://github.com/seanbreckenridge/bleanser) which removes any files which don't include any new/unique data:
+I use the `-timestamp` flag, which means the directory this saves to gets pretty large pretty quickly. To remove duplicate/'useless' data, I have a [bleanser (backup cleanser) module](https://github.com/seanbreckenridge/bleanser) which removes any files which don't include any new/unique data:
 
 ```
 [ ~ ] $ python3 -m bleanser_sean.modules.cstimer prune ~/data/cubing/cstimer --remove --yes
