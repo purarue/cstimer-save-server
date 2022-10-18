@@ -42,7 +42,7 @@ If you have a port conflict, change the `PORT` variable in `cstimer_auto_downloa
 
 ## auth
 
-I would recommend setting up Authorization for this, so no random application/service can hit the server endpoint, saving arbitrary data to the `-save-to` directory.
+I would recommend setting up Authentication for this, so no random application/service can hit the server endpoint, saving arbitrary data to the `-save-to` directory.
 
 To do that set the `const SECRET` in the userscript (`cstimer_auto_download.js`) to something, e.g.:
 
