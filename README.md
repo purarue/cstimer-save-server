@@ -58,6 +58,10 @@ Then launch the server with that key:
 CSTIMER_SECRET="Rszhs3b24La87401" cstimer-save-server -save-to .
 ```
 
+### local cstimer server
+
+I run cstimer locally using [this script](https://sean.fish/d/.local/scripts/generic/cstimer?redirect), which means it doesnt run on `cstimer.net`, but `localhost:4633`. The `cstimer_auto_download_personal.js` script contains an additional match and redirect for that, as an example
+
 ### bleanser
 
 I use the `-timestamp` flag, which means the directory this saves to gets pretty large pretty quickly. To remove duplicate/'useless' data, I have a [bleanser (backup cleanser) module](https://github.com/seanbreckenridge/bleanser) which removes any files which don't include any new/unique data:
