@@ -13,7 +13,7 @@
 (() => {
   // redirect to local server
   if (window.location.href.includes("cstimer.net")) {
-    window.location.href = "http://localhost:4633"
+    window.location.href = "http://localhost:4633";
   }
   // configuration
   const PORT = 8553;
@@ -33,4 +33,3 @@
     })
   );
 })();
-
