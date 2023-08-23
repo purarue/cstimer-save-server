@@ -71,7 +71,7 @@ func main() {
 			return
 		}
 		if auth != "" && config.secretKey == "" {
-			fmt.Fprintf(os.Stderr, "Warning: recieved auth key but no CSTIMER_SECRET set in environment")
+			fmt.Fprintf(os.Stderr, "Warning: received auth key but no CSTIMER_SECRET set in environment")
 		}
 
 		b, err := io.ReadAll(r.Body)
