@@ -60,7 +60,7 @@ CSTIMER_SECRET="Rszhs3b24La87401" cstimer-save-server -save-to .
 
 ### local cstimer server
 
-I run cstimer locally using [this script](https://sean.fish/d/.local/scripts/generic/cstimer?redirect), which means it doesnt run on `cstimer.net`, but `localhost:4633`. The `cstimer_auto_download_personal.js` script contains an additional match and redirect for that, as an example
+I run cstimer locally using [this script](https://sean.fish/d/.local/scripts/generic/cstimer?redirect), which means it doesn't run on `cstimer.net`, but `localhost:4633`. The `cstimer_auto_download_personal.js` script contains an additional match and redirect for that, as an example
 
 ### bleanser
 

@@ -67,7 +67,7 @@ func main() {
 
 		auth := r.URL.Query().Get("auth")
 		if config.secretKey != "" && config.secretKey != auth {
-			http.Error(w, "Secret key doesnt not match", http.StatusForbidden)
+			http.Error(w, "Secret key doesn't not match", http.StatusForbidden)
 			return
 		}
 		if auth != "" && config.secretKey == "" {
