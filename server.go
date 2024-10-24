@@ -29,7 +29,7 @@ func parseFlags() *config {
 	saveTo := flag.String("save-to", "", "path to save datafile to.")
 	timestamped := flag.Bool("timestamped", false, fmt.Sprintf("instead of writing to the same '%s' file, write to a new file each time", defaultFilename))
 	flag.Usage = func() {
-		fmt.Fprintf(os.Stderr, "usage: cstimer-save-server [FLAG...]\nFor instructions, see https://github.com/seanbreckenridge/cstimer-save-server\n\n")
+		fmt.Fprintf(os.Stderr, "usage: cstimer-save-server [FLAG...]\nFor instructions, see https://github.com/purarue/cstimer-save-server\n\n")
 		flag.PrintDefaults()
 	}
 	flag.Parse()

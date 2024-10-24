@@ -5,7 +5,7 @@
 // @match          http://localhost:4633/*
 // @grant          none
 // @version        0.2
-// @author         Sean Breckenridge
+// @author         purarue
 // @description    Companion script for cstimer-save-server to update a local file with my cstimer.net solves
 // @license        GPL3
 // ==/UserScript==

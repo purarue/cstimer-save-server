@@ -10,7 +10,7 @@ Requires:
 To run:
 
 - install the userscript from [here](https://greasyfork.org/en/scripts/453183-cstimer-auto-download), (or manually install it from `cstimer_auto_download.js`)
-- `go install 'github.com/seanbreckenridge/cstimer-save-server@latest`
+- `go install 'github.com/purarue/cstimer-save-server@latest`
 - Run `cstimer-save-server` in the background somewhere:
 
 `cstimer-save-server -save-to ~/Documents/cstimer`
@@ -64,10 +64,10 @@ I run cstimer locally using [this script](https://sean.fish/d/.local/scripts/gen
 
 ### bleanser
 
-I use the `-timestamp` flag, which means the directory this saves to gets pretty large pretty quickly. To remove duplicate/'useless' data, I have a [bleanser (backup cleanser) module](https://github.com/seanbreckenridge/bleanser) which removes any files which don't include any new/unique data:
+I use the `-timestamp` flag, which means the directory this saves to gets pretty large pretty quickly. To remove duplicate/'useless' data, I have a [bleanser (backup cleanser) module](https://github.com/purarue/bleanser) which removes any files which don't include any new/unique data:
 
 ```
-[ ~ ] $ python3 -m bleanser_sean.modules.cstimer prune ~/data/cubing/cstimer --remove --yes
+[ ~ ] $ python3 -m bleanser_pura.modules.cstimer prune ~/data/cubing/cstimer --remove --yes
 [INFO    2022-10-16 10:57:04 bleanser.core.common main.py:144] processing 4 files (/home/sean/data/cubing/cstimer/1665942943939.json ... /home/sean/data/cubing/cstimer/1665943018015.json)
 [INFO    2022-10-16 10:57:04 bleanser.core.common processor.py:95] using 1 workers
 [INFO    2022-10-16 10:57:04 bleanser.core.common processor.py:373] processing /home/sean/data/cubing/cstimer/1665942943939.json (0/4)
