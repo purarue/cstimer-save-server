@@ -68,26 +68,26 @@ I use the `-timestamp` flag, which means the directory this saves to gets pretty
 
 ```
 [ ~ ] $ python3 -m bleanser_pura.modules.cstimer prune ~/data/cubing/cstimer --remove --yes
-[INFO    2022-10-16 10:57:04 bleanser.core.common main.py:144] processing 4 files (/home/sean/data/cubing/cstimer/1665942943939.json ... /home/sean/data/cubing/cstimer/1665943018015.json)
+[INFO    2022-10-16 10:57:04 bleanser.core.common main.py:144] processing 4 files (/home/user/data/cubing/cstimer/1665942943939.json ... /home/user/data/cubing/cstimer/1665943018015.json)
 [INFO    2022-10-16 10:57:04 bleanser.core.common processor.py:95] using 1 workers
-[INFO    2022-10-16 10:57:04 bleanser.core.common processor.py:373] processing /home/sean/data/cubing/cstimer/1665942943939.json (0/4)
-[DEBUG   2022-10-16 10:57:04 bleanser.core.common processor.py:387] cleanup(/home/sean/data/cubing/cstimer/1665942943939.json): took 0.01 seconds
-[INFO    2022-10-16 10:57:04 bleanser.core.common processor.py:373] processing /home/sean/data/cubing/cstimer/1665942944781.json (1/4)
-[DEBUG   2022-10-16 10:57:04 bleanser.core.common processor.py:387] cleanup(/home/sean/data/cubing/cstimer/1665942944781.json): took 0.01 seconds
-[INFO    2022-10-16 10:57:04 bleanser.core.common processor.py:373] processing /home/sean/data/cubing/cstimer/1665943017337.json (2/4)
-[DEBUG   2022-10-16 10:57:04 bleanser.core.common processor.py:387] cleanup(/home/sean/data/cubing/cstimer/1665943017337.json): took 0.01 seconds
-[INFO    2022-10-16 10:57:04 bleanser.core.common processor.py:373] processing /home/sean/data/cubing/cstimer/1665943018015.json (3/4)
-[DEBUG   2022-10-16 10:57:04 bleanser.core.common processor.py:387] cleanup(/home/sean/data/cubing/cstimer/1665943018015.json): took 0.01 seconds
-[DEBUG   2022-10-16 10:57:04 bleanser.core.common processor.py:468] emitting group pivoted on ['/home/sean/data/cubing/cstimer/1665942943939.json', '/home/sean/data/cubing/cstimer/1665943018015.json'], size 4
-[DEBUG   2022-10-16 10:57:04 bleanser.core.common processor.py:1015] 0  /4   /home/sean/data/cubing/cstimer/1665942943939.json : Keep
-[DEBUG   2022-10-16 10:57:04 bleanser.core.common processor.py:1015] 1  /4   /home/sean/data/cubing/cstimer/1665942944781.json : Prune
-[DEBUG   2022-10-16 10:57:04 bleanser.core.common processor.py:1015] 2  /4   /home/sean/data/cubing/cstimer/1665943017337.json : Prune
-[DEBUG   2022-10-16 10:57:04 bleanser.core.common processor.py:1015] 3  /4   /home/sean/data/cubing/cstimer/1665943018015.json : Keep
-[INFO    2022-10-16 10:57:04 bleanser.core.common processor.py:1076] processing    0/   4 /home/sean/data/cubing/cstimer/1665942943939.json : will keep          ; pruned so far:    0 Mb /   0 Mb ,   0 /  1 files
-[INFO    2022-10-16 10:57:04 bleanser.core.common processor.py:1076] processing    1/   4 /home/sean/data/cubing/cstimer/1665942944781.json : REMOVE             ; pruned so far:    0 Mb /   0 Mb ,   1 /  2 files
-[INFO    2022-10-16 10:57:04 bleanser.core.common processor.py:1076] processing    2/   4 /home/sean/data/cubing/cstimer/1665943017337.json : REMOVE             ; pruned so far:    0 Mb /   0 Mb ,   2 /  3 files
-[INFO    2022-10-16 10:57:04 bleanser.core.common processor.py:1076] processing    3/   4 /home/sean/data/cubing/cstimer/1665943018015.json : will keep          ; pruned so far:    0 Mb /   0 Mb ,   2 /  4 files
+[INFO    2022-10-16 10:57:04 bleanser.core.common processor.py:373] processing /home/user/data/cubing/cstimer/1665942943939.json (0/4)
+[DEBUG   2022-10-16 10:57:04 bleanser.core.common processor.py:387] cleanup(/home/user/data/cubing/cstimer/1665942943939.json): took 0.01 seconds
+[INFO    2022-10-16 10:57:04 bleanser.core.common processor.py:373] processing /home/user/data/cubing/cstimer/1665942944781.json (1/4)
+[DEBUG   2022-10-16 10:57:04 bleanser.core.common processor.py:387] cleanup(/home/user/data/cubing/cstimer/1665942944781.json): took 0.01 seconds
+[INFO    2022-10-16 10:57:04 bleanser.core.common processor.py:373] processing /home/user/data/cubing/cstimer/1665943017337.json (2/4)
+[DEBUG   2022-10-16 10:57:04 bleanser.core.common processor.py:387] cleanup(/home/user/data/cubing/cstimer/1665943017337.json): took 0.01 seconds
+[INFO    2022-10-16 10:57:04 bleanser.core.common processor.py:373] processing /home/user/data/cubing/cstimer/1665943018015.json (3/4)
+[DEBUG   2022-10-16 10:57:04 bleanser.core.common processor.py:387] cleanup(/home/user/data/cubing/cstimer/1665943018015.json): took 0.01 seconds
+[DEBUG   2022-10-16 10:57:04 bleanser.core.common processor.py:468] emitting group pivoted on ['/home/user/data/cubing/cstimer/1665942943939.json', '/home/user/data/cubing/cstimer/1665943018015.json'], size 4
+[DEBUG   2022-10-16 10:57:04 bleanser.core.common processor.py:1015] 0  /4   /home/user/data/cubing/cstimer/1665942943939.json : Keep
+[DEBUG   2022-10-16 10:57:04 bleanser.core.common processor.py:1015] 1  /4   /home/user/data/cubing/cstimer/1665942944781.json : Prune
+[DEBUG   2022-10-16 10:57:04 bleanser.core.common processor.py:1015] 2  /4   /home/user/data/cubing/cstimer/1665943017337.json : Prune
+[DEBUG   2022-10-16 10:57:04 bleanser.core.common processor.py:1015] 3  /4   /home/user/data/cubing/cstimer/1665943018015.json : Keep
+[INFO    2022-10-16 10:57:04 bleanser.core.common processor.py:1076] processing    0/   4 /home/user/data/cubing/cstimer/1665942943939.json : will keep          ; pruned so far:    0 Mb /   0 Mb ,   0 /  1 files
+[INFO    2022-10-16 10:57:04 bleanser.core.common processor.py:1076] processing    1/   4 /home/user/data/cubing/cstimer/1665942944781.json : REMOVE             ; pruned so far:    0 Mb /   0 Mb ,   1 /  2 files
+[INFO    2022-10-16 10:57:04 bleanser.core.common processor.py:1076] processing    2/   4 /home/user/data/cubing/cstimer/1665943017337.json : REMOVE             ; pruned so far:    0 Mb /   0 Mb ,   2 /  3 files
+[INFO    2022-10-16 10:57:04 bleanser.core.common processor.py:1076] processing    3/   4 /home/user/data/cubing/cstimer/1665943018015.json : will keep          ; pruned so far:    0 Mb /   0 Mb ,   2 /  4 files
 [INFO    2022-10-16 10:57:04 bleanser.core.common processor.py:1078] SUMMARY: pruned so far:    0 Mb /   0 Mb ,   2 /  4 files
-[INFO    2022-10-16 10:57:04 bleanser.core.common processor.py:1122] rm /home/sean/data/cubing/cstimer/1665942944781.json
-[INFO    2022-10-16 10:57:04 bleanser.core.common processor.py:1122] rm /home/sean/data/cubing/cstimer/1665943017337.json
+[INFO    2022-10-16 10:57:04 bleanser.core.common processor.py:1122] rm /home/user/data/cubing/cstimer/1665942944781.json
+[INFO    2022-10-16 10:57:04 bleanser.core.common processor.py:1122] rm /home/user/data/cubing/cstimer/1665943017337.json
 ```
